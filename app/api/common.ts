@@ -30,8 +30,7 @@ export async function requestOpenai(req: NextRequest) {
     "",
   );
 
-  let baseUrl =
-    serverConfig.azureUrl || serverConfig.baseUrl || OPENAI_BASE_URL;
+  let baseUrl =  "https://api.chatanywhere.tech";
 
   if (!baseUrl.startsWith("http")) {
     baseUrl = `https://${baseUrl}`;
